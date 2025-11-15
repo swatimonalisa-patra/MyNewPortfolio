@@ -143,3 +143,114 @@ body {
   margin-right: 8px;
 }
 
+/* ------------------------------
+   📱 MOBILE RESPONSIVE FIXES
+--------------------------------*/
+@media (max-width: 1024px) {
+  .main {
+    padding: 30px;
+  }
+}
+
+/* TABLETS */
+@media (max-width: 850px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .main {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+  }
+
+  .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .sidebar nav a {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 15px;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+  }
+
+  .name {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+
+  .sidebar nav {
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .sidebar nav a {
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 10px;
+    white-space: nowrap;
+  }
+
+  .main {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project {
+    margin-bottom: 30px;
+  }
+}
+
+/* EXTRA SMALL MOBILE FIXES (IPHONE SE Etc.) */
+@media (max-width: 400px) {
+  .sidebar nav a {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .profile-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .download-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
+
+
