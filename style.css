@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  display: flex;
+  background: #f8fcff;
+}
+
+/* LEFT NAV */
+.sidebar {
+  width: 260px;
+  background: #0b1b2b;
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.menu {
+  margin-top: 40px;
+  text-align: left;
+  padding-left: 28px;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.menu a i {
+  width: 22px;
+  height: 22px;
+  stroke: #4ab3ff;     /* BLUE ICON COLOR */
+}
+
+.menu a:hover {
+  background: #08365b;
+  padding-left: 35px;
+  transition: 0.2s;
+}
+
+.name {
+  font-size: 22px;
+  margin: 15px 0;
+  text-align: center;
+}
+/* PAGE CONTENT */
+.main {
+  margin-left: 220px;
+  padding: 50px;
+  width: calc(100% - 260px);
+}
+
+.section {
+  margin-bottom: 80px;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill span {
+  float: right;
+}
+
+.bar {
+  width: 100%;
+  height: 8px;
+  background: #d7e4ee;
+  border-radius: 4px;
+}
+
+.bar div {
+  height: 100%;
+  background: #0077cc;
+  border-radius: 4px;
+}
+
+.download-btn {
+  display: inline-block;
+  background: #0077cc;
+  padding: 10px 18px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 18px;
+  border-left: 4px solid #0077cc;
+  box-shadow: 0 0 6px #bbb;
+}
+
+/* 🔵 ICON SETTINGS */
+.icon {
+  width: 20px;
+  height: 20px;
+  stroke: #0077cc;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.icon-sm {
+  width: 18px;
+  height: 18px;
+  stroke: white;
+  margin-right: 6px;
+}
+
+/* Navigation Icons */
+.sidebar nav a i {
+  margin-right: 10px;
+}
+
+/* Project title spacing */
+.project h3 i {
+  margin-right: 8px;
+}
+
